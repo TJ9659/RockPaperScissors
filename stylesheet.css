@@ -1,0 +1,38 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #fcf8de;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* resets the button styling */
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+img{
+    border-radius: 25%;
+    width: auto;
+    height: 150px;
+    border: 5px solid black;
+}
+
+#score-container{
+    background-color: white;
+    padding: 10px;
+    border: 5px solid black;
+    border-radius: 25%;
+    width: 50%;
+    margin-top: 30px;
+}
+
+
