@@ -10,9 +10,10 @@
     <div id="container">
         <h1>WELCOME TO ROCK PAPER SCISSORS</h1>
         <div id="player-container">
-            <button id="player-rock"><img src="./img/rock.jpeg"></button>
-            <button id="player-paper"><img src="./img/paper.jpeg"></button>
-            <button id="player-scissors"><img src="./img/scissors.jpeg"></button>
+            <h3 class="player-header">Player</h3>
+            <button class="player-selection" id="player-rock"><img src="./img/rock.jpeg"></button>
+            <button class="player-selection" id="player-paper"><img src="./img/paper.jpeg"></button>
+            <button class="player-selection" id="player-scissors"><img src="./img/scissors.jpeg"></button>
         </div>
 
         <div id="result-container">
@@ -20,15 +21,22 @@
         </div>
 
         <div id="computer-container">
-            <button id="computer-rock"><img src="./img/rock.jpeg"></button>
-            <button id="computer-paper"><img src="./img/paper.jpeg"></button>
-            <button id="computer-scissors"><img src="./img/scissors.jpeg"></button>
+            <h3 class="player-header">Computer</h3>
+            <button class="computer-selection" id="computer-rock"><img src="./img/rock.jpeg"></button>
+            <button class="computer-selection" id="computer-paper"><img src="./img/paper.jpeg"></button>
+            <button class="computer-selection" id="computer-scissors"><img src="./img/scissors.jpeg"></button>
         </div>
 
         <div id="score-container">
-            <h3 id="player-score">Player Score: </h3>
-            <h3 id="computer-score">Computer Score: </h3>
+            <h3>Player Score: <span id="player-score">0</span></h3>
+            <h3>Computer Score: <span id="computer-score">0</span></h3>
         </div>
+
+        <div id="outcome-container">
+            <h3 id="outcome"></h3>
+        </div>
+
+        <button id="play-again-button"></button>
     </div>
     
     <script src="script.js"></script>
