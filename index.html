@@ -11,9 +11,9 @@
         <h1>WELCOME TO ROCK PAPER SCISSORS</h1>
         <div id="player-container">
             <h3 class="player-header">Player</h3>
-            <button class="player-selection" id="player-rock"><img src="./img/rock.jpeg"></button>
-            <button class="player-selection" id="player-paper"><img src="./img/paper.jpeg"></button>
-            <button class="player-selection" id="player-scissors"><img src="./img/scissors.jpeg"></button>
+            <button class="player-selection player-selection-hover" id="player-rock"><img src="./img/rock.jpeg"></button>
+            <button class="player-selection player-selection-hover" id="player-paper"><img src="./img/paper.jpeg"></button>
+            <button class="player-selection player-selection-hover" id="player-scissors"><img src="./img/scissors.jpeg"></button>
         </div>
 
         <div id="result-container">
@@ -22,9 +22,9 @@
 
         <div id="computer-container">
             <h3 class="player-header">Computer</h3>
-            <button class="computer-selection" id="computer-rock"><img src="./img/rock.jpeg"></button>
-            <button class="computer-selection" id="computer-paper"><img src="./img/paper.jpeg"></button>
-            <button class="computer-selection" id="computer-scissors"><img src="./img/scissors.jpeg"></button>
+            <button class="computer-selection" ><img id="computer-rock" src="./img/rock.jpeg"></button>
+            <button class="computer-selection" ><img id="computer-paper" src="./img/paper.jpeg"></button>
+            <button class="computer-selection" ><img id="computer-scissors" src="./img/scissors.jpeg"></button>
         </div>
 
         <div id="score-container">
@@ -36,7 +36,7 @@
             <h3 id="outcome"></h3>
         </div>
 
-        <button id="play-again-button"></button>
+        <button id="play-again-button" style="display:none">Play Again?</button>
     </div>
     
     <script src="script.js"></script>

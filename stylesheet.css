@@ -43,6 +43,7 @@ img{
     margin-top: 30px;
 }
 
+
 .player-header{
     display: flex;
     justify-content: center;
@@ -52,8 +53,16 @@ img{
     animation: ease-in-out;
 }
 
-.player-selection :hover{
-    
+.player-selection-hover :hover{
+    border: 10px solid black;
+    height: 130px;
+}
+
+.computer-selection{
+    cursor: default;
+}
+
+.computer-selection-click{
     border: 10px solid black;
     height: 130px;
 }
@@ -63,9 +72,9 @@ img{
     padding: 10px;
     border: 5px solid black;
     border-radius: 25%;
-    width: 50%;
+    width: 100px;
     margin-top: 30px;
-    
+    text-align: center;
 }
 
 
