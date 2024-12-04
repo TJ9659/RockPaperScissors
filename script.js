@@ -70,10 +70,10 @@ function playRound(humanChoice) {
     humanScore++;
   } else if (computerChoice === "scissors" && humanChoice === "paper") {
     score.textContent = `You lose! ${selections[2]} beats ${selections[1]}`;
-    humanScore++;
+    computerScore++;
   } else if (computerChoice === "rock" && humanChoice === "paper") {
     score.textContent = `You win! ${selections[1]} beats ${selections[0]}`;
-    computerScore++;
+    humanScore++;
   } else if (computerChoice === "paper" && humanChoice === "scissors") {
     score.textContent = `You win! ${selections[2]} beats ${selections[1]}`;
     humanWin = true;
