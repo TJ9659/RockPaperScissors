@@ -1,83 +1,109 @@
 @font-face {
-    font-family: "Lacquer";
-    src: url('./Lacquer-Regular.ttf');
+  font-family: "Lacquer";
+  src: url("./Lacquer-Regular.ttf");
 }
 
-html{
-    font-family: "Lacquer";
+html {
+  font-family: "Lacquer";
 }
-body{
-    height: 100vh;
-    width: 100vw;
-    background-color: #fcf8de;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+  background-color: #fcf8de;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
-#container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* resets the button styling */
 button {
-    all: unset;
-    cursor: pointer;
+  all: unset;
+  cursor: pointer;
 }
 
-img{
+img {
+  border-radius: 25%;
+  width: auto;
+  height: 150px;
+  border: 5px solid black;
+}
+
+#score-container {
+  background-color: white;
+  padding: 10px;
+  border: 5px solid black;
+  border-radius: 25%;
+  width: 50%;
+  margin-top: 30px;
+}
+
+.player-header {
+  display: flex;
+  justify-content: center;
+}
+
+.player-selection {
+  animation: ease-in-out;
+}
+
+.player-selection-hover :hover {
+  border: 10px solid black;
+  height: 130px;
+}
+
+.computer-selection {
+  cursor: default;
+}
+
+.computer-selection-click {
+  border: 10px solid black;
+  height: 130px;
+}
+
+#play-again-button {
+  background-color: white;
+  padding: 10px;
+  border: 5px solid black;
+  border-radius: 25%;
+  width: 100px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* styles for mobile devices */
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 12px;
+    width: 100%;
+    margin: 10px;
+  }
+
+  img {
     border-radius: 25%;
-    width: auto;
-    height: 150px;
+    width: 50px;
+    height: auto;
     border: 5px solid black;
-}
+  }
 
-#score-container{
-    background-color: white;
-    padding: 10px;
+  .player-selection-hover :hover {
     border: 5px solid black;
-    border-radius: 25%;
-    width: 50%;
-    margin-top: 30px;
-}
+    height: 45px;
+  }
 
-
-.player-header{
-    display: flex;
-    justify-content: center;
-}
-
-.player-selection{
-    animation: ease-in-out;
-}
-
-.player-selection-hover :hover{
-    border: 10px solid black;
-    height: 130px;
-}
-
-.computer-selection{
-    cursor: default;
-}
-
-.computer-selection-click{
-    border: 10px solid black;
-    height: 130px;
-}
-
-#play-again-button{
-    background-color: white;
-    padding: 10px;
+  .player-selection-hover :active {
     border: 5px solid black;
-    border-radius: 25%;
-    width: 100px;
-    margin-top: 30px;
-    text-align: center;
+    height: 45px;
+  }
+
+  .computer-selection-click {
+    border: 5px solid black;
+    height: 45px;
+  }
+
 }
-
-
-
-
-
